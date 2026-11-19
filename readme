@@ -1,0 +1,28 @@
+# Cloud-Based Food Ordering and Restaurant Management System[cite: 2, 5]
+
+A scalable, high-availability web platform built on AWS to handle online food ordering and restaurant operations under fluctuating traffic loads[cite: 2, 5].
+
+## Project Details
+* **Course:** Cloud Infrastructure and Services (25CS2206E), A.Y. 2026–2027
+* **Team Number:** 18 | **Section:** 12
+* **Team Members:** B. Kavi Krishna Sai (2520080021), P. Prajwal (2520080017), Hemanth (2520090074)
+* **Guide:** Dr. Divya Priya, Professor, CSIT
+
+## Key Features
+* **Customer Workflow:** Browse digital menus, place orders, track live order status, and share feedbac
+* **Admin Workflow:** Manage menu items, control inventory, and process incoming orders via an administrative dashboard
+
+## Cloud Architecture & AWS Services
+* **Amazon EC2 (Elastic Compute Cloud):** Hosts Dockerized application containers
+* **Amazon VPC (Virtual Private Cloud):** Handles custom network address planning, public/private subnets, Internet Gateway, and NAT Gateway.
+* **Elastic Load Balancing (Application Load Balancer - ALB):** Distributes incoming HTTP/HTTPS traffic across EC2 instances.
+* **Amazon EC2 Auto Scaling (Auto Scaling Groups):** Dynamically scales EC2 compute capacity based on demand and CloudWatch metrics.
+* **Amazon RDS / Amazon DynamoDB:** Provides persistent storage for order transactions, user details, and menu data.
+* **Amazon S3 (Simple Storage Service):** Stores static assets, menu images, and backups.
+* **Amazon CloudWatch:** Monitors application requests, error logs, resource utilization, and scaling activities.
+* **AWS IAM & Security Groups:** Enforces least-privilege access control and network/instance-level security.
+
+## Expected Outcomes
+* High availability and fault tolerance without single points of failure.
+* Dynamic scalability and low latency during peak dining hours.
+* Cost-optimized cloud resource usage across varying workloads.
